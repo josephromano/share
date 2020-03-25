@@ -1,0 +1,62 @@
+Lab 8 solutions
+
+Part I
+------
+1) Using v = 346 m/s
+   L_x = 29/3.28  = 8.8 m -> f = v/2L_x = 19.7 Hz
+   L_y = 24/3.28  = 7.3 m -> f = v/2L_y = 23.7 Hz
+   L_z = 9.5/3.28 = 2.9 m -> f = v/2L_z = 59.7 Hz
+
+2) Double frequencies: 39.4 Hz, 47.4 Hz, 119.4 Hz
+
+3) Range: 23.7 Hz to 119.4 Hz
+
+Part II
+-------
+1) L = 0.362 m, v = 346 m/s -> 
+   f(1,0,0) = (v/2L) = 478 Hz
+   f(2,0,0) = (v/2L) * 2 = 956 Hz
+   f(2,1,0) = (v/2L) * sqrt(4 + 1) = 1069 Hz
+   f(2,2,0) = (v/2L) * sqrt(4 + 4) = 1352 Hz
+   f(3,0,0) = (v/2L) * 3 = 1434 Hz
+   f(2,2,1) = (v/2L) * sqrt(4 + 4 + 1) = 1434 Hz
+   f(3,2,0) = (v/2L) * sqrt(9 + 4) = 1723 Hz
+   
+Part III
+--------
+1) We have L = 29 ft, W = 24 ft, H = 9.5 ft
+   A_ceiling = A_floor = L*W
+   A_walls = 2*H*L + 2*H*W = 2*H*(L+W)
+   a_ceiling = 0.80 (acoustical board, 500 Hz)
+   a_floor = a_walls = 0.02 (concrete, bricks, 500 Hz)
+   
+   A_eff = a_ceiling * A_ceiling + ... = 591 sabin
+   V = L*W*H = 6612 ft^3
+   T_R = 0.05*V/A_eff = 0.56 s
+
+2) Course Guide had A_eff = 844 sabin and T_R = 0.4 s
+   The difference is that the Course Guide included chairs and people
+   in the lecture room, which increases the absorption of sound, and
+   thus decreases the reverberation time
+
+Part IV
+-------
+1) Box: L = W = H = 0.362 m * (3.28 ft/m) = 1.2 ft 
+   a = 0.13 (plywood, 500 Hz)
+   A_box = 6*L^2
+
+   A_eff = a * A_box = 1.1 sabin
+   V = L^3 = 1.67 ft^3
+   T_R = 0.05*V/A_eff = 0.076 s
+
+2) Least absorbing: a = 0.02 (concrete, bricks, 500 Hz)
+   A_eff = 0.17 sabin
+   T_R = 0.49 s
+
+   Most absorbing: a = 0.80 (acoustical board, 500 Hz)
+   A_eff = 6.77 sabin
+   T_R = 0.012 s
+
+3) One can adjust the reverberation time of a room simply by changing
+the materials used on the walls, ceiling, and floor.
+
