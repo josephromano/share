@@ -1,0 +1,40 @@
+Lab 7 solutions
+
+Part I
+------
+1) I = I0 10^(70 dB/10 dB) = 10^{-12} W/m^2 x 10^7 = 10^{-5} W/m^2
+
+2) Delta SIL = 10 log(10) dB = 10 x 1 dB = 10 dB
+
+3) SIL_10 = SIL_1 + Delta SIL = 75 dB + 10 dB = 85 dB
+
+4) SIL = 10 log(I/I0) = 10 log(1/10^{-12}) = 120 dB
+
+Part II
+-------
+1) SIL(40 phon, 200 Hz) = 53 dB
+
+2) SIL(40 phon, 4000 Hz) = 35 dB
+
+Part III
+--------
+1) Delta SIL = 10 log(1.25) dB = 10 x 0.097 dB ~ 1 dB
+
+2) JND(80 dB, 1000 Hz) = 0.35 dB
+
+3) Expect a smaller JND in intensity for the square wave since it has
+higher frequency components, and JND in intensity decreases with
+increasing frequency (ear is more sensitive to higher frequencies).
+
+Part IV
+-------
+1) JND(200 Hz) = 2.5 Hz or 2.5/200 = 1.25%
+
+2) JND(2000 Hz) = 10 Hz or 10/2000 = 0.5% 
+
+Part V
+------
+1) 83 phon - 73 phon = 10 phon
+
+2) 90 phon - 60 phon = 30 phon -> 2^3 = 8 times louder
+
