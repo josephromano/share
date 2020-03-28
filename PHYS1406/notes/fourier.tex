@@ -1,0 +1,143 @@
+\section{Fourier analysis}
+\label{s:fourier}
+
+\bi
+
+\i {\em Fourier's Theorem}:
+Any complex periodic function can be
+written as a sum of harmonics.
+
+\i {\em Corollary to Fourier's Theorem}:
+Any complex periodic vibration can be
+written as a sum of standing wave vibrations.
+
+\i Mathematically, Fourier's theorem can be expressed as
+%
+\be
+y(t) = A_0
++ A_1\sin(2\pi f_1 t + \phi_1)
++ A_2\sin(2\pi f_2 t + \phi_2)
++ \cdots
+\ee
+%
+where $y(t)$ is a periodic function with period $T$
+and $f_n=n f_1$ ($n=1,2\cdots$) are harmonics of 
+the fundamental frequency $f_1= 1/T$.
+The term $A_0$ allows for a constant offset, and 
+$A_n$ and $\phi_n$ are the amplitudes and phases of 
+the component sinusoids.
+
+\i NOTE: The above theorem also applies to periodic
+functions of position $y(x)$, where $L$ is the 
+period of the function.
+
+\i Mathematically, the corollary to Fourier's theorem
+can be expressed as
+%
+\be
+y(x,t) =
+A_1\sin(2\pi x/\lambda_1)\cos(2\pi f_1 t + \phi_1)
++A_2\sin(2\pi x/\lambda_2)\cos(2\pi f_2 t + \phi_2)
++\cdots
+\ee
+%
+where $A_n$ and $\phi_n$ ($n=1,2,\cdots)$
+are the amplitudes and phases of the standing 
+wave vibrations, having wavelengths
+$\lambda_n = 2L/n$ and frequencies
+$f_n = v/\lambda_n=nv/2L$
+($v$ being the wave velocity on the string).
+
+\i Each term above corresponds to a standing
+wave vibration pattern on the string, with a vibration
+frequency that is a harmonic of the fundamental
+frequency $f_1=v/2L$.
+
+
+\i Decomposing a periodic function into its component
+sinusoids is called {\em Fourier analysis}.
+Constructing a periodic function by adding to 
+together harmonics having different amplitudes and
+phases is called {\em Fourier synthesis}.
+
+\i If the function $y(t)$ is not periodic, one can
+still decompose it into sinusoids, but now one has
+contributions (in principle) from {\em all} frequencies,
+and not just the (discrete) harmonics.
+
+\i \demo The FFT Analyzer tool from the Faber 
+Electroacoustics Toolbox performs Fourier analysis.
+
+A pure tone (e.g., a tuning fork) consists 
+of just a single frequency component.
+A note produced by an instrument (e.g., a guitar or
+recorder) will have a frequency spectrum dominated by
+a few harmonics.
+
+\i Examples of different waves and their Fourier
+decompositions:
+
+(i) square wave: only odd harmonics, with 
+amplitudes 1, 1/3, 1/5, $\cdots$, and 
+phases all 0.
+
+(ii) triangle wave: only odd harmonics, with
+amplitudes 1, 1/9, 1/25, $\cdots$, and 
+phases alternating between 0 and 180$^\circ$ 
+(so alternating $\pm$).
+
+(iii) sawtooth wave: both odd and even harmonics, with 
+amplitudes 1, 1/2, 1/3, $\cdots$, and 
+phases all 0.
+
+\i \demo Use the matlab routines
+fouriersythesize.m, fouriersynthesizeScript.m to 
+synthesize periodic waves given the amplitudes and
+phases of the harmonics.
+
+\i \demo Convert these to periodic functions to
+audible sound using the matlab routines
+fouriersythesizesound.m, fouriersynthesizesoundScript.m.
+
+\i \demo Synthesize sound waves having the same
+component amplitudes but different component phases.
+Can you hear a difference?
+
+Typically, phase has little effect on the timbre of a 
+sound.
+This is called {\em Ohm's law of hearing.}
+The timbre is only noticeably different 
+when the phases of two Fourier combinations 
+are radically different from one another---e.g.,
+both waves have amplitudes $1, 1/2, 1/3, \cdots$ 
+but phases $0, 0, 0, \dots$ 
+versus $0, 90^\circ, 0, 90^\circ, \cdots$ (so alternating
+sines and cosines).
+ 
+\i \demo Synthesize sound waves having a contributions
+from the 2nd, 3rd, and higher harmonics, but no contribution
+from the fundamental---e.g., 
+contributions from 440~Hz, 660~Hz, 880~Hz, $\cdots$ 
+but not from 220~Hz.
+This is an example of a sound have a 
+{\em missing fundamental}.
+What pitch do you hear?
+Do you hear the fundamental frequency even though it 
+has zero amplitude?
+
+NOTE: Most people hear a pitch corresponding to the 
+fundamental frequency even though it is absent from 
+the spectrum.
+This is called a {\em virtual} or {\em subjective} pitch.
+Although the ear doesn't physically respond to a 
+frequency that's not present, cognitive processes in the 
+brain infer its presence from the timing of electrical 
+impulses triggered by the periodicity of the sound wave.
+%[I'm not sure right now if this subjective pitch 
+%corresponds to a {\em real} difference tone
+%of $220~{\rm Hz}= (660-440)~{\rm Hz}$ produced
+%by non-linearities in the ear (basically amplitude 
+%modulation between the 660~Hz and 440~Hz components), 
+%or is the result of cognitive processes in the brain.]
+
+\ei

@@ -1,0 +1,245 @@
+\section{Mathematical details}
+
+\bi
+
+\i Logarithm identities:
+%
+\begin{align}
+\log(ab)  &= \log a + \log b
+\\
+\log(a/b) &= \log a - \log b
+\\
+\log(a^b) &= b\log a
+\\
+a^{\log b} &= b^{\log a}
+\end{align}
+%
+These are true for logarithms with respect to any base.
+
+\i Trigonometric identities:
+%
+\begin{align}
+\sin A\,\sin B &=\frac{1}{2}\left[\cos(A-B)-\cos(A+B)\right]
+\\
+\cos A\,\cos B &=\frac{1}{2}\left[\cos(A-B)+\cos(A+B)\right]
+\\
+\sin A\,\cos B &=\frac{1}{2}\left[\sin(A-B)+\sin(A+B)\right]
+\end{align}
+%
+
+\i Adding two sinusoids (same frequency):
+
+The sum of two sine functions having the same 
+frequency (but possibly different amplitudes and
+phases) yields another sinusoid with 
+the {\em same} frequency:
+%
+\be
+A_1\sin(2\pi ft+\phi_1) + A_2\sin(2\pi ft+\phi_2)
+= A \sin(2\pi ft + \phi)
+\ee
+%
+where
+%
+\be
+A = \sqrt{A_1^2+A_2^2 + 2 A_1 A_2\cos(\phi_1-\phi_2)}\,,
+\quad
+\tan\phi = \frac{A_1\sin\phi_1+A_2\sin\phi_2}{A_1\cos\phi_1 + A_2\cos\phi_2}
+\ee
+
+\i Adding two sinusoids (different frequencies):
+
+The sum of two sinusoids with the same amplitude
+but {\em different} frequencies and phases is given by
+%
+\be
+A\sin(2\pi f_1 t+\phi_1) + A\sin(2\pi f_2 t+\phi_2)
+=2A\cos\left(\pi\Delta ft + \frac{(\phi_2-\phi_1)}{2}\right)
+\sin\left(2\pi\bar ft + \frac{(\phi_1+\phi_2)}{2}\right)
+\ee
+%
+where
+%
+\be
+\bar f =\frac{1}{2}(f_1+f_2)\,,
+\quad
+\Delta f = f_2-f_1
+\ee
+%
+If $\bar f$ is in the audio range (between about 20~Hz 
+and 20~kHz) and $|\Delta f|\lesssim 15~{\rm Hz}$, we hear 
+{\em beats} with frequency 
+%
+\be
+f_{\rm beat} = |\Delta f| = |f_2-f_1|
+\ee
+%
+The beats are amplitude modulations of a tone with average
+frequency $\bar f$.
+
+Note that the modulated signal is periodic only if 
+$f_1/f_2 = m/n$ for some positive integers $m$ and $n$
+({\em comensurate} frequencies).
+For such a case, the period of the modulated signal 
+is given by $T=mT_1=nT_2$, where $T_1$ and $T_2$ are the 
+periods of the two component sinusoids---i.e.,
+$T_1=1/f_1$ and $T_2=1/f_2$.
+
+\i Amplitude modulation:
+
+The product of two sine functions having different 
+frequencies and phases is given by:
+%
+\begin{align}
+\sin(2\pi f_1 t + \phi_1)\sin(2\pi f_2 t + \phi_2)
+=
+&\frac{1}{2}\big(
+\cos\left[2\pi(f_2-f_1)t+(\phi_2-\phi_1)\right]
+\nonumber\\
+&\quad\quad\quad 
+-\cos\left[2\pi(f_1+f_2)t+(\phi_1+\phi_2)\right]
+\big)
+\end{align}
+%
+Note the presence of {\em sidebands} at the sum and
+difference frequencies $f_2-f_1$ and $f_2+f_1$.
+This is a non-linear combination of sinusoids, as opposed
+to a linear combination such as addition of two sinusoids.
+
+\i Displacement of air molecules:
+
+For a sinusoidal wave propagating in the $x$-direction, 
+the displacement of an air molecule away from its equilibrium 
+position at $x$ is given by:
+%
+\be
+s(x,t) = s_m \,\sin \left(k x-\omega t\right)
+\ee
+%
+where $k=2\pi/\lambda$ and $\omega=2\pi/T$.
+(Note: $\omega/k=v$.)
+It follows that
+%
+\begin{align}
+\frac{\Delta s}{\Delta x} 
+= k s_m\,\cos \left(k x-\omega t\right)\,,
+\quad
+u\equiv
+\frac{\Delta s}{\Delta t} 
+= -\omega s_m\,\cos \left(k x-\omega t\right)
+\end{align}
+%
+Thus,
+%
+\be
+\frac{\Delta s}{\Delta x}
+=-\frac{k}{\omega}\frac{\Delta s}{\Delta t}
+=-\frac{1}{v}\frac{\Delta s}{\Delta t}
+=-\frac{u}{v}
+\ee
+%
+
+\i Relationship between $\Delta V/V$ and $\Delta s/\Delta x$:
+%
+\be
+V = A\Delta x\,,
+\quad
+\Delta V = A\Delta s
+\quad\Rightarrow\quad
+\frac{\Delta V}{V} = \frac{\Delta s}{\Delta x}
+\ee
+
+\i Relationship between pressure $p$ and displacement $s$:
+%
+\be
+p = -B\frac{\Delta V}{V}\,,
+\quad
+\frac{\Delta V}{V} = \frac{\Delta s}{\Delta x}=-\frac{u}{v}\,,
+\quad
+v=\sqrt{\frac{B}{\rho}}
+\quad\Rightarrow\quad
+p = \rho v u = \rho v\frac{\Delta s}{\Delta t}
+\ee
+%
+Thus, $p$ is proportional to $u$, 
+which means that $p$ and 
+$s$ are 90 degrees out of phase with one another.
+
+\i Relationship between intensity $I$ and pressure $p$:
+%
+\be
+I =({\rm energy\ density})\cdot v
+=2\cdot \frac{\frac{1}{2}mu^2}{V}\cdot v
+=\rho u^2 v 
+= \frac{p^2}{\rho v}
+\ee
+%
+Thus, $I$ is proportional to $p^2$.
+
+\i Fourier series:
+
+Any periodic function $y(t)$ with period $T$ can be
+written as a sum of sines and cosines:
+%
+\be
+y(t) = A_0 
++\left[a_1\sin(2\pi f_1 t) + b_1\cos(2\pi f_1 t)\right]
++\left[a_2\sin(2\pi f_2 t) + b_2\cos(2\pi f_2 t)\right]
++ \cdots
+\ee
+%
+where $f_n=n f_1$ ($n=1,2\cdots$) 
+are harmonic frequencies of the fundamental $f_1=1/T$.
+
+Alternatively, one can write
+%
+\be
+y(t) = A_0 
++ A_1\sin(2\pi f_1 t + \phi_1) 
++ A_2\sin(2\pi f_2 t + \phi_2) 
++ \cdots
+\ee
+%
+where
+$A_n$ and $\phi_n$ are the amplitudes and phases of the 
+sinusoids.
+
+In terms of $a_n$ and $b_n$,
+%
+\be
+A_n= \sqrt{a_n^2+b_n^2}\,,\quad
+\tan\phi_n = b_n/a_n
+\ee
+
+\i Plucked guitar string:
+
+The vibrations of a plucked guitar string (length $L$)
+can be written as a sum of standing wave vibrations
+%
+\be
+y(x,t) = 
+A_1\sin(2\pi x/\lambda_1)\cos(2\pi f_1 t) 
++A_2\sin(2\pi x/\lambda_2)\cos(2\pi f_2 t)
++\cdots
+\ee
+%
+where $A_n$ ($n=1,2,\cdots)$
+are the amplitudes of the standing wave vibrations, 
+having wavelengths 
+$\lambda_n = 2L/n$ and frequencies 
+$f_n = v/\lambda_n=nv/2L = nf_1$ 
+($v$ being the wave velocity on the string). 
+
+Note that each term in the sum can be written as the
+sum of a right-moving and left-moving wave:
+%
+\be
+A_n\sin(2\pi x/\lambda_n)\cos(2\pi f_n t)
+= \frac{1}{2}\left[
+\sin(k_n(x-vt))+\sin(k_n(x+vt))
+\right]
+\ee
+%
+where $k_n= 2\pi/\lambda_n = n\pi/L$.
+
+\ei
