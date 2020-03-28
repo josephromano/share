@@ -1,0 +1,1067 @@
+\section{Musical scales and tuning systems}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Terminology and equal temperament}
+\bi
+
+\item An International Conference in London 
+in 1939 established
+A$_4$ = 440~Hz as the standard reference frequency.
+Before that time, A$_4$ was tuned to different
+frequencies ranging from 422.5~Hz (Handel) to
+444~Hz, depending on composer, orchestra, ...
+
+\item Scale: succession of notes in ascending or
+descending order.
+
+\item Different scales correspond to different
+divisions of the octave---chromatic (12 intervals),
+diatonic (7 intervals), 
+pentatonic (5 intervals). 
+
+\i For example, 
+a chromatic scale divides the octave into 
+12 intervals called {\em semitones} or {\em half-steps}.
+In {\em equal temperament} tuning, 
+these intervals all have
+the same size, corresponding to a frequency ratio of 
+%
+\be
+2^{1/12} = 1.05946
+\ee
+%
+A {\em whole tone} is exactly equal to two semitones.
+
+\i Vincenzo Galilei (father of Galileo Galilei)
+and Chu Tsai-Yu (a Chinese scholar) independently
+proposed an equal-tempered chromatic scale around 1580.
+
+\i But equal-tempered tuning didn't become popular 
+until the 1700's.
+``The Well-Tempered Clavier" by Johannes Sebastian Bach 
+demonstrated the usefulness of equal-temperament.
+Using all 24 major and minor keys, this piece sounded
+good only in equal-tempered tuning, and not in the other
+tuning systems that we will describe below.
+
+\i A {\em cent} is a frequency interval equal to
+1/100 of a semitone in equal temperament.
+This corresponds to a frequency ratio of
+%
+\be
+2^{1/1200} = 1.000578
+\ee
+%
+
+\i The human ear can distinguish frequencies
+that differ by about 10 cents, which corresponds to 
+a frequency ratio of $2^{10/1200}=1.00579$, 
+or about a 0.5\% difference in frequency.
+(We will discuss this in more detail in a later
+section when we talk about {\em just noticeable
+difference} for pitch.)
+
+\i Table~\ref{t:equal-temperament} gives the frequency
+ratios for a chromatic scale in equal-temperament tuning.
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Note & ET freq ratio \\
+\hline
+C & $2^{0/12}=1.000$ \\
+C$^\sharp$/D$^\flat$ & $2^{1/12}=1.059$ \\
+D & $2^{2/12}=1.122$ \\
+D$^\sharp$/E$^\flat$ & $2^{3/12}=1.189$ \\
+E & $2^{4/12}=1.260$ \\
+F & $2^{5/12}=1.335$ \\
+F$^\sharp$/G$^\flat$ & $2^{6/12}=1.414$ \\
+G & $2^{7/12}=1.498$ \\
+G$^\sharp$/A$^\flat$ & $2^{8/12}=1.587$ \\
+A & $2^{9/12}=1.682$ \\
+A$^\sharp$/B$^\flat$ & $2^{10/12}=1.782$ \\
+B & $2^{11/12}=1.888$ \\
+C$'$ & $2^{12/12}=2.000$ \\
+\hline
+\end{tabular}
+\caption{Notes in a chromatic scale and the 
+corresponding equal-temperament frequency ratios.}
+\label{t:equal-temperament}
+\end{center}
+\end{table}
+
+\i Figure~\ref{f:chromatic-scale-keyboard} shows the
+corresponding notes on a piano keyboard.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.7\textwidth]{octave-keys}
+\caption{Notes in a chromatic scale on a piano keyboard.}
+\label{f:chromatic-scale-keyboard}
+\end{center}
+\end{figure}
+%
+
+\i A full piano keyboard, which has 88 keys 
+ranging from A$_0$ to C$_8$, 
+is a basically a logarithmic
+frequency scale, with neighboring keys 
+(white-black or white-white) corresponding
+to a frequency interval of a semitone.
+
+\i On a piano, or any instrument tuned to
+equal temperament, the sharps and flats are equal
+to one another---e.g., C${}^\sharp$ and D${}^\flat$
+are tuned to the same frequency.
+These are called {\em enharmonic} notes.
+
+\i NOTE!! This equality of sharps and flats is
+{\em not} true, in general, for other tuning systems
+such as Pythagorean, mean-tone, or just temperament 
+(see below).
+For these systems, one must first decide to tune,
+for example, to C$^\sharp$ or D$^\flat$, etc., and 
+{\em then} set the other (enharmonic) note equal to the first.
+
+\i It is common to choose:
+% 
+\be
+{\rm C}-{\rm C}^\sharp-{\rm D}-{\rm E}^\flat-{\rm E}-%
+{\rm F}-{\rm F}^\sharp-{\rm G}-{\rm A}^\flat-{\rm A}-%
+{\rm B}^\flat-{\rm B}-{\rm C}'
+\nonumber
+\ee
+%
+as the fundamental notes in a chromatic scale.
+
+\i Figure~\ref{f:musical-staves-log-scale}
+shows the correspondence between the treble and bass 
+staves and their equal-tempered frequencies.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.7\textwidth]{musical-staves-log-scale}
+\caption{Correspondence between the treble and bass 
+staves and their equal-tempered frequencies.}
+\label{f:musical-staves-log-scale}
+\end{center}
+\end{figure}
+%
+This is another example of a logarithmic frequency
+scale.
+
+\i The staff lines are not equally-spaced
+in this graph, since some divisions correspond to a 
+minor third (three semitones), while other divisions
+correspond to a major third (four semitones).
+
+\i \exer 
+Show that middle C in equal temperament has a frequency
+of $261.63~{\rm Hz}$:
+%
+\be
+{\rm C}_4:\quad 
+{\rm A}_3 \cdot 2^{3/12} =
+\frac{440\ {\rm Hz}}{2}\cdot 2^{3/12} = 261.63~{\rm Hz}
+\ee
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Diatonic scales}
+\bi
+
+\i A diatonic scale divides the octave into 
+7 intervals consisting of both tones and semitones.
+The order of tones and semitones 
+defines the {\em major} interval order, 
+{\em minor} interval order, and various 
+{\em modes} (e.g., Dorian, Phrygian, Lydian, ...)
+as shown in Figure~\ref{f:diatonic-interval-order}.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.6\textwidth]{modes}
+%\includegraphics[width=.6\textwidth]{diatonic-interval-order}
+\caption{Interval orders for a diatonic scale:
+major, minor, and various modes.}
+\label{f:diatonic-interval-order}
+\end{center}
+\end{figure}
+%
+
+\i The diatonic major interval order is 
+T-T-S-T-T-T-S (2-2-1-2-2-2-1).
+This is the standard
+%
+\be
+{\rm do-re-mi-fa-sol-la-ti-do}
+\nonumber
+\ee
+%
+interval order.
+
+\i The diatonic minor interval order is
+T-S-T-T-S-T-T (2-1-2-2-1-2-2).
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Musical intervals}
+\bi
+
+\i Table~\ref{t:musical-intervals} is a list 
+of the most common musical intervals and their 
+corresponding {\em just} and 
+equal-tempered frequency ratios.  
+(We will discuss the just temperament
+tuning system in detail in a later subsection.)
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+Interval & \# semitones & Just freq ratio &
+ET freq ratio & Difference (cents) & Example \\
+\hline
+Octave & 12 & $2:1=2.000$ & 2.000 & 0 & C-C$'$ \\
+Perfect fifth & 7 & $3:2=1.500$ & 1.498 & 2 & C-G \\
+Perfect fourth & 5 & $4:3=1.333$ & 1.335 & $-2$ & C-F, G-C$'$ \\
+Major third & 4 & $5:4=1.250$ & 1.260 & $-14$ & C-E \\
+Minor third & 3 & $6:5=1.200$ & 1.189 & 16 & C-E${}^\flat$, A-C$'$ \\
+Minor sixth & 8 & $8:5=1.600$ & 1.587 & 14 & C-A${}^\flat$, E-C$'$ \\
+Major sixth & 9 & $5:3=1.667$ & 1.682 & $-16$ & C-A \\
+\hline
+\end{tabular}
+\caption{Common musical intervals and their corresponding
+just and equal-tempered frequency ratios.}
+\label{t:musical-intervals}
+\end{center}
+\end{table}
+
+\i A musical interval corresponds to a 
+{\em ratio} of frequencies.
+Multiplication of frequency ratios corresponds
+to addition of frequency intervals.
+
+\i For example,
+an octave equals a perfect fifth plus a perfect fourth,
+or a major third plus a minor sixth, 
+or a minor third plus a major sixth:
+%
+\be
+\frac{3}{2}\cdot \frac{4}{3} = \frac{2}{1}\,,
+\quad
+\frac{5}{4}\cdot \frac{8}{5} = \frac{2}{1}\,,
+\quad
+\frac{6}{5}\cdot \frac{5}{3} = \frac{2}{1}
+\ee
+%
+
+\i Also, a perfect fifth equals a major third plus a minor third:
+%
+\be
+\frac{5}{4}\cdot \frac{6}{5} = \frac{3}{2}
+\ee
+%
+
+\i Notes in a harmonic series have frequencies that 
+are integer multiples of some fundamental frequency:
+$f_n= n f_1$, where $n=1,2,\cdots$.
+Successive harmonics can be related to the musical 
+intervals as shown in Figure~\ref{f:harmonics-keys},
+where the fundamental frequency corresponds to A$_2$.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{harmonics-keys}
+\caption{Notes on a piano keyboard corresponding to
+the first eight harmonics of A$_2$.}
+\label{f:harmonics-keys}
+\end{center}
+\end{figure}
+%
+
+\i A comparison of the harmonic frequencies and
+equal-tempered frequenices are given in 
+Table~\ref{t:harmonics-ET}.
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Harmonic & Exact freq (Hz) & Equal-tempered freq (Hz) 
+& Difference (cents) & Piano note \\ 
+\hline
+1 & 110 & 110.00 & 0 & A$_2$ \\
+2 & 220 & 220.00 & 0 & A$_3$ \\
+3 & 330 & 329.63 & 2 & E$_4$ \\
+4 & 440 & 440.00 & 0 & A$_4$ \\
+5 & 550 & 554.37 & $-14$ & C$_5^\sharp$ \\
+6 & 660 & 659.26 & 2 & E$_5$ \\
+7 & 770 & 783.99 & $-31$ & G$_5$ \\
+8 & 880 & 880.00 & 0 & A$_5$ \\
+\hline
+\end{tabular}
+\caption{Relation between harmonic frequencies
+and equal-tempered frequencies.}
+\label{t:harmonics-ET}
+\end{center}
+\end{table}
+
+\i Chords: There are three major chords (triads) 
+having just frequency ratios 4:5:6:
+%
+\be
+{\rm C-E-G}\,,
+\quad
+{\rm F-A-C}\,,
+\quad
+{\rm G-B-D}
+\nonumber
+\ee
+%
+These three notes correspond to a major third followed by a minor third.
+
+\i There are two minor chords (triads) 
+having just frequency ratios 10:12:15:
+%
+\be
+{\rm E-G-B}\,,
+\quad
+{\rm A-C-E}
+\nonumber
+\ee
+%
+These three notes correspond to a minor third followed by a major third.
+
+\i A useful construct is the so-called {\em circle of fifths}
+shown in Figure~\ref{f:circle-of-fifths}.
+Successive notes on the circle are separated by a musical fifth.
+Clockwise motion around the outer part of the circle 
+corresponds to going up by fifths;
+counter-clockwise motion around the inner part of the circle
+corresponds to going down by fifths.
+In equal temperament, the notes next to one another have the 
+same frequency; 
+this is not the case for other tuning systems such as Pythagorean,
+mean-tone, or just temperament.
+For these other tuning systems, the circle of fifths does {\em not}
+close.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.5\textwidth]{circle-of-fifths}
+\caption{Circle of fifths.
+Clockwise motion around the outer part of the circle 
+corresponds to going up by fifths;
+counter-clockwise motion around the inner part of the circle
+corresponds to going down by fifths.}
+\label{f:circle-of-fifths}
+\end{center}
+\end{figure}
+%
+
+\i A simplified circle-of-fifths diagram 
+valid for equal temperament tuning
+is shown in Figure~\ref{f:circle-of-fifths-simple}.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.6\textwidth]{circle-of-fifths-simple}
+\caption{Simplified circle of fifths valid for equal
+temperament tuning.}
+\label{f:circle-of-fifths-simple}
+\end{center}
+\end{figure}
+%
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Major and minor key signatures}
+\bi
+
+\i Major and minor key signatures can be read off a 
+circle-of-fifths diagram if we draw appropriate `wedges'
+on the diagram as shown in Figure~\ref{f:major-minor-keys}.
+(The diagram for major key scales is shown on the left;
+the diagram for minor key scales is shown on the right.)
+Simply `dial the wedge' so that that the numeral I points
+to the tonic.  
+Subsequent keys in the scale are given by numerals II, III, ...
+%
+\begin{figure}[htbp]
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=.5\textwidth]{major-keys} &
+\includegraphics[width=.5\textwidth]{minor-keys} 
+\end{tabular}
+\caption{Diagrams for reading off major and minor key scales
+(left panel and right panel, respectively).
+`Dial the wedge' so that the numeral I points to the tonic.}
+\label{f:major-minor-keys}
+\end{center}
+\end{figure}
+%
+
+\i For example, the C-major and C-minor diatonic scales are:
+\be
+{\rm C-D-E-F-G-A-B}
+\nonumber
+\ee
+% 
+and
+%
+\be
+{\rm C-D-E}^\flat{\rm -F-G-G}^\sharp{\rm -A}^\sharp
+\nonumber
+\ee
+
+\i The notes in the G-major scale are the same as for C-major 
+except for F$^\sharp$:
+%
+\be
+{\rm G-A-B-C-D-E-F}^\sharp
+\nonumber
+\ee
+% 
+
+\i The notes in the F-major scale are the same as for C-major 
+except for B$^\flat$:
+%
+\be
+{\rm F-G-A-B}^\flat{\rm -C-D-E}
+\nonumber
+\ee
+% 
+
+\i In general, moving clockwise around the circle of fifths
+increases the number of sharps in the key signature by one.
+Moving counter-clockwise around the circle of fifths increases
+the number of flats in the key signature by one.
+
+\i Note that the A-minor scale is
+%
+\be
+{\rm A-B-C-D-E-F-G}
+\nonumber
+\ee
+% 
+so the notes are {\em exactly} the same as for C-major.
+But because the tonic (and tonal interval order) are 
+different for these two scales, they sound differently.
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Pentatonic scales}
+\bi
+
+\i A pentatonic scale is probably the oldest 
+division of the octave.
+It was developed independently in many different cultures.
+
+\i A pentatonic scale divides the octave into
+5 intervals (3 intervals are whole tones and
+2 intervals are three semitones wide).
+
+\i A pentatonic scale can be constructed from 
+just fifths and the octave 
+(or, equivalently, from just fifths and fourths)
+as a subset of Pythagorean temperament (see
+next subsection).
+
+\i A guitar (or any 6-string instrument) can be tuned 
+to a pentatonic scale {\em using only the guitar to do
+the tuning} as described below:
+
+[To play a note {\em an octave above} an open note, touch the 
+string at its half-way point (12th fret on a guitar) 
+as you pluck it with your other hand.
+Similarly, to play a note {\em a fifth above} an open note, 
+touch the string at its one-third point (7th fret on a guitar)
+as you pluck it with your other hand.]
+
+Instructions (tuning order: string 6 (top), 1 (bottom), 3, 5, 2, 4):
+
+- Adjust the tension of string 6 
+to any value that gives it a nice sound (let us assume it's a C)
+
+- Tune the open note of string 1 
+to the note an octave above string 6 (then string 1 will be C$'$)
+
+- Tune the open note of string 3 to the note 
+a fifth above string 6 (then string 3 will be G)
+
+- Tune the note an octave above string 5 to the note
+a fifth above string 3 (then string 5 will be D)
+
+- Tune the open note of string 2 to the note 
+a fifth above string 5 (then string 2 will be A)
+
+- Tune the note an octave above string 4 to the note
+a fifth above string 2 (then string 4 will be E)
+
+The result is the guitar tuned to the pentatonic
+scale in major interval order 2-2-3-2-3;
+for this example, it is the key of C corresponding to 
+the notes C-D-E-G-A-C$'$.
+
+\item
+The pentatonic scale also has minor
+and various modal inteval orders.
+The major interval order is: 2-2-3-2-3.
+The minor interval order is: 3-2-2-3-2.
+(See Figure~\ref{f:pentatonic-interval-order}.)
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.6\textwidth]{pentatonic-interval-order}
+\caption{Interval orders for a pentatonic scale:
+major, minor, and various modes.}
+\label{f:pentatonic-interval-order}
+\end{center}
+\end{figure}
+%
+
+\i Examples of pentatonic scales in major interval
+order are C-D-E-G-A-C$'$ and
+F${}^\sharp$-G${}^\sharp$-A${}^\sharp$-C${}^\sharp$-D${}^\sharp$-F$'{}^\sharp$
+(the black keys on a piano).
+
+\i Note that both
+C-D-F-G-A-C$'$ and
+the 
+C$^\sharp$-D$^\sharp$-F$^\sharp$-G$^\sharp$-A$^\sharp$-C$'{}^\sharp$
+are pentatonic scales with modal tonal structure: 2-3-2-2-3.
+
+\i \demo
+Examples of music played using a pentatonic scale are
+``Amazing Grace," 
+``Auld Lang Syne," 
+``My Girl" (by the Temptations), and
+Etude Op.10 No.5 (Black Keys) by Chopin.
+
+Watch YouTube video of pianist Vladimir Horowitz playing 
+Chopin's etude \\
+(http://www.youtube.com/watch?v=jaMA8LWW3C0).
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Pythagorean temperament}
+\bi
+
+\i Pythagorean temperament is a tuning system 
+scale constructed from just fifths and the the octave
+(or, equivalently, from just fifths and fourths).
+
+\i Using the circle of fifths, we can tune
+a chromatic scale to Pythagorean
+temperament as illustrated in Figure~\ref{f:pythagorean-chromatic-scale}.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{pythagorean-chromatic-scale}
+\caption{A portion of the circle of fifths 
+for calculating a chromatic scale of frequencies in Pythagorean temperament.}
+\label{f:pythagorean-chromatic-scale}
+\end{center}
+\end{figure}
+%
+
+\i Applying the appropriate number of factors of $3/2$ 
+(or $2/3$) and then scaling by $1/2$ (or $2$) 
+to bring the resulting frequency to within an octave
+of C, we obtain the numbers
+in Table~\ref{t:pythagorean-chromatic}.
+%
+%\begin{table}[htbp]
+%\begin{center}
+%\begin{tabular}{|c|c|}
+%\hline
+%Note & Freq ratio \\
+%\hline
+%C & 1:1 \\
+%D & 9:8 \\
+%E & 81:64 \\
+%F & 4:3 \\
+%G & 3:2 \\
+%A & 27:16 \\
+%B & 243:128 \\
+%C$'$ & 2:1 \\
+%\hline
+%\end{tabular}
+%\caption{Pythagorean diatonic scale.
+%The Pythagorean diatonic whole-tone interval is 9:8 
+%and the diatonic semitone interval is 256:243.}
+%\label{t:pythagorean-diatonic}
+%\end{center}
+%\end{table}
+%
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Note & Pyth freq ratio & ET freq ratio & Difference (cents) \\
+\hline
+C & $1:1=1.000$ & 1.000 & 0 \\
+C$^\sharp$ & $2187:2048= 1.068$ & 1.059 & $14$ \\
+D & $9:8=1.125$ & 1.122 & $4$ \\
+E$^\flat$ & $32:27=1.185$ & 1.189 & $-6$ \\
+E & $81:64=1.266$ & 1.260 & 8 \\
+F & $4:3=1.333$ & 1.335 & $-2$ \\
+F$^\sharp$ & $729:512=1.424$ & 1.414 & 12 \\
+G & $3:2=1.500$ & 1.498 & 2 \\
+A$^\flat$ & $128:81=1.580$ & 1.587 & $-8$ \\
+A & $27:16=1.688$ & 1.682 & 6 \\
+B$^\flat$ & $16:9=1.778$ & 1.782 & $-4$ \\
+B & $243:128=1.898$ & 1.888 & 10 \\
+C$'$ & $2:1=2.000$ & 2.000 & 0 \\
+\hline
+\end{tabular}
+\caption{Pythagorean chromatic scale and comparison
+to equal-tempered frequency ratios.
+The Pythagorean diatonic whole-tone interval is 9:8.
+The Pythagorean chromatic semitone interval is
+either 256:243 or 2187:2048.}
+\label{t:pythagorean-chromatic}
+\end{center}
+\end{table}
+
+\i Table~\ref{t:pyth_vs_ET} compares Pythagorean and
+equal-tempered frequencies for all notes on the 
+circle of fifths traversed once in the clockwise direction
+and once in the counter-clockwise direction.
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Note & Pyth freq ratio & ET freq ratio & Difference (cents) \\
+\hline
+D$^{\flat\flat}$ & 0.987 & 1.000 & $-23$ \\
+C & 1.000 & 1.000 & 0 \\
+D$^\flat$ & 1.053 & 1.059 & $-10$ \\
+C$^\sharp$ & 1.068 & 1.059 & 14 \\
+E$^{\flat\flat}$ & 1.110 & 1.122 & $-20$ \\
+D & 1.125 & 1.122 & 4 \\
+E$^\flat$ & 1.185 & 1.189 & $-6$ \\
+D$^\sharp$ & 1.201 & 1.189 & 18 \\
+F$^\flat$ & 1.249 & 1.260 & $-16$ \\
+E & 1.266 & 1.260 & 8 \\
+F & 1.333 & 1.335 & $-2$ \\
+E$^\sharp$ & 1.352 & 1.335 & 22 \\
+G$^\flat$ & 1.405 & 1.414 & $-12$ \\
+F$^\sharp$ & 1.424 & 1.414 & 12 \\
+A$^{\flat\flat}$ & 1.480 & 1.498 & $-22$ \\
+G & 1.500 & 1.498 & 2 \\
+A$^\flat$ & 1.580 & 1.587 & $-8$ \\
+G$^\sharp$ & 1.602 & 1.587 & 16 \\
+B$^{\flat\flat}$ & 1.665 & 1.682 & $-18$ \\
+A & 1.688 & 1.682 & 6 \\
+B$^\flat$ & 1.778 & 1.782 & $-4$ \\
+A$^\sharp$ & 1.802 & 1.782 & 20 \\
+C$^\flat$ & 1.873 & 1.888 & $-14$ \\
+B & 1.898 & 1.888 & 10 \\
+C$'$ & 2.000 & 2.000 & 0 \\
+B$^\sharp$ & 2.027 & 2.000 & 23 \\
+\hline
+\end{tabular}
+\caption{A comparison of notes in the Pythagorean 
+and equal-temperament tuning systems going once around
+the circle of fifths in both the clockwise and 
+counter-clockwise directions.}
+\label{t:pyth_vs_ET}
+\end{center}
+\end{table}
+
+\i Note that the circle of fifths doesn't close since
+B$^\sharp$ and C$'$ are not equal to one another.
+In addition, C$^\sharp$ doesn't equal D$^\flat$,
+C$^\flat$ doesn't equal B, B$^{\flat\flat}$ doesn't equal A,
+etc.
+
+\i Pythagorean comma: ratio of frequencies for B$^\sharp$
+and C$'$:
+%
+\begin{equation}
+\frac{{\rm B}^\sharp}{{\rm C}'}
+= \frac{(3/2)^{12} (1/2)^6}{2/1} 
+= \frac{(3/2)^{12}}{2^7}
+= \frac{531441}{524288} 
+= 1.0136
+\end{equation}
+%
+
+\i The above is equivalent to the statement that 
+12 fifths doesn't exactly equal 7 octaves.
+They differ by a ratio of 1.0136, which corresponds to
+an interval of 23 cents.
+
+\i Pythagorean temperament (by construction)
+has perfect fourths and fifths in the key of C, 
+but in the key of C$^\sharp$, the
+fifth from C$^\sharp$ to A$^\flat$ 
+is too flat by a factor of the Pythagorean comma:
+%
+\be
+\frac{{\rm A}^\flat / {\rm C}^\sharp}{3/2}=
+\frac{(128/81)/(2187/2048)}{3/2}
+= \frac{1}{1.0136}
+\ee
+%
+This is called a {\em wolf fifth} due to its `howling' sound
+(which I can't hear!).
+
+\i \demo
+Use the matlab routine playinterval.m to compare the 
+fifths C to G and C$^\sharp$ to A$^\flat$ in 
+Pythagorean temperament.
+
+\i In addition, a Pythagorean third (e.g., from C to E)
+differs signicantly 
+from a just major third that has a frequency ratio of 5/4.
+This difference is called the {\em syntonic comma}:
+%
+\begin{equation}
+\delta
+=\frac{81/64}{5/4} 
+=\frac{81}{80}
+= 1.0125
+\end{equation}
+%
+Thus, a Pythagorean third is too sharp by just over 
+1\% or approximately 22 cents.
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mean-tone temperament}
+\bi
+
+\i Mean-tone temperament (or {\em quarter-comma mean-tone 
+temperament}) is a tuning system that tries to correct the
+problem with Pythagorean major thirds by flattening them with 
+the syntonic comma $\delta$.
+
+\i This flattening of a Pythagorean third is accomplished by
+flattening the fifths by one-quarter of the syntonic comma.
+This is called a {\em diminished fifth} and has a frequency
+ratio:
+%
+\be
+\frac{3}{2}\delta^{-1/4} = 
+\frac{3}{2}\left(\frac{81}{80}\right)^{-1/4}
+= 1.4953
+\ee
+%
+
+\i Using a diminished fifth in place of a just fifth,
+the construction of the mean-tone chromatic scale
+is identical to that for the Pythagorean chromatic scale,
+as shown in Figure~\ref{f:mean-chromatic-scale}.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{mean-chromatic-scale}
+\caption{A portion of the circle of fifths 
+for calculating a chromatic scale of frequencies in meantone temperament.
+The notation $3/2*$ and $2/3*$ correspond to going
+up and down, respectively, by a diminished fifth, which has 
+a frequency ratio of $1.4953$.}
+\label{f:mean-chromatic-scale}
+\end{center}
+\end{figure}
+%
+%
+%\be
+%{\rm Mean-tone:}\quad
+%{\rm C}\quad
+%{\rm D}-\frac{1}{2}\delta\quad
+%{\rm E}-\delta\quad
+%{\rm F}+\frac{1}{4}\delta\quad
+%{\rm G}-\frac{1}{4}\delta\quad
+%{\rm A}-\frac{3}{4}\delta\quad
+%{\rm B}-\frac{5}{4}\delta\quad
+%{\rm \ C}'
+%\nonumber
+%\ee
+%
+%
+%\be
+%{\rm C}\quad
+%{\rm C}^\sharp-1\frac{3}{4}\delta\quad
+%{\rm D}-\frac{1}{2}\delta\quad
+%{\rm E}^\flat+\frac{3}{4}\delta\quad
+%{\rm E}-\delta\quad
+%{\rm F}+\frac{1}{4}\delta\quad
+%{\rm F}^\sharp-\frac{3}{2}\delta\quad
+%{\rm G}-\frac{1}{4}\delta\quad
+%{\rm A}^\flat+\delta\quad
+%{\rm A}-\frac{3}{4}\delta\quad
+%{\rm B}^\flat+\frac{1}{2}\delta\quad
+%{\rm B}-\frac{5}{4}\delta\quad
+%{\rm \ C}'
+%\nonumber
+%\ee
+%
+
+\i Table~\ref{t:pythagorean-meantone} compares the
+mean-tone and equal-temperament frequency ratios 
+for a chromatic scale.
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Note & Mean-tone freq ratio & ET freq ratio & Difference (cents) \\
+\hline
+C & 1.000 & 1.000 & 0  \\
+C$^\sharp$ & 1.045  & 1.059 & $-24$ \\
+D & 1.118 & 1.122 & $-7$ \\ 
+E$^\flat$ & 1.196 & 1.189 & 10 \\
+E & 1.250 & 1.260 & $-14$ \\
+F & 1.337 & 1.335 & 3 \\
+F$^\sharp$ & 1.398 & 1.414 & $-21$ \\
+G & 1.495 & 1.498 & $-3$ \\
+A$^\flat$ & 1.600 & 1.587 & 14 \\
+A & 1.672 & 1.682 & $-10$ \\
+B$^\flat$ & 1.789 & 1.782 & 7 \\
+B & 1.869 & 1.888 & $-17$ \\
+C$'$ & $2.000$ & $2.000$ & 0  \\
+\hline
+\end{tabular}
+\caption{Comparison of mean-tone and equal-tempered 
+frequency ratios.}
+\label{t:pythagorean-meantone}
+\end{center}
+\end{table}
+%
+
+\i The major thirds (C to E, F to A, and G to B) 
+have been flattened by the syntonic comma $\delta$ so that
+they now have the just frequency ratio of 5:4.
+
+\i All the major seconds (i.e., whole tone intervals
+C to D, D to E, F to G, etc.)
+have been flattened by $\delta/2$ so they now have a
+frequency ratio of $\sqrt{5}:2 = 1.118$, instead of
+$9:8 = 1.1250$ in Pythagorean temperament.
+
+\i If one goes all away around the circle of fifths
+using diminished fifths, one finds that the circle
+doesn't close by $-41$~cents.
+(In other words, 12 diminished fifths is short of 
+7 octaves by an interval of 41 cents.)
+
+\i For comparison, for Pythagorean temperament, 
+the circle of fifths also doesn't close, 
+overshooting by $23$~cents.
+
+\i Similar to Pythagorean temperament, the fifth
+from C$^\sharp$ to A$^\flat$ is out of tune.
+It differs from a perfect fifth by 36~cents,
+which is more than the difference for Pythagorean
+tuning, which was $-23$~cents.
+ 
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Just temperament}
+\bi
+
+\i Just temperament is a tuning system constructed 
+from perfect fifths, major thirds, and the octave 
+(or, equivalently, from perfect fifths, perfect fourths,
+major thirds, and minor sixths).
+In the key of C-major, it has three beatless 
+major chords and two beatless minor chords.
+
+\i Using Figure~\ref{f:just-chromatic-scale} as a schematic
+for going up and down in frequency by perfect fifths and 
+major thirds, we obtain the frequency ratios given in
+Table~\ref{t:just-chromatic}.
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.6\textwidth]{just-chromatic-scale}
+\caption{Schematic for calculating a chromatic scale of frequencies 
+in just temperament.}
+\label{f:just-chromatic-scale}
+\end{center}
+\end{figure}
+%
+%\begin{table}[htbp]
+%\begin{center}
+%\begin{tabular}{|c|c|}
+%\hline
+%Note & Freq ratio \\
+%\hline
+%C & 1:1 \\
+%D & 9:8 \\
+%E & 5:4 \\
+%F & 4:3 \\
+%G & 3:2 \\
+%A & 5:3 \\
+%B & 15:8 \\
+%C$'$ & 2:1 \\
+%\hline
+%\end{tabular}
+%\caption{Just diatonic scale.
+%The just diatonic whole-tone interval is either 9:8 or 10:9
+%and the diatonic semitone interval is 16:15.}
+%\label{t:just-diatonic}
+%\end{center}
+%\end{table}
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Note & Just freq ratio & ET freq ratio & Difference (cents) \\
+\hline
+C & $1:1 = 1.000$ & 1.000 & 0 \\
+C$^\sharp$ & $25:24 = 1.042$ & 1.059 & $-29$ \\
+D & $9:8=1.125$ & 1.122 & 4 \\
+E$^\flat$ & $6:5=1.200$ & 1.189 & 16 \\
+E & $5:4=1.250$ & 1.260 & $-14$ \\
+F & $4:3=1.333$ & 1.335 & $-2$ \\
+F$^\sharp$ & $45:32=1.406$ & 1.414 & $-10$ \\
+G & $3:2=1.500$ & 1.498 & 2 \\
+A$^\flat$ & $8:5=1.600$ & 1.587 & 14 \\
+A & $5:3=1.667$ & 1.682 & $-16$ \\
+B$^\flat$ & $9:5=1.800$ & 1.782 & 18 \\
+B & $15:8=1.875$ & 1.888 & $-12$ \\
+C$'$ & $2:1=2.000$ & 2.000 & 0 \\
+\hline
+\end{tabular}
+\caption{Just chromatic scale and comparison to 
+equal-tempered frequency ratios.
+The just diatonic whole-tone interval is 
+either 9:8 or 10:9.
+The just chromatic semitone interval is 
+either 16:15, 25:24, or 27:25.}
+\label{t:just-chromatic}
+\end{center}
+\end{table}
+
+\i Just temperament is arguably the best possible tuning 
+system, provided one stays within the key in which 
+you tuned to, e.g., the key of C for the above tuning.
+
+\i But just as we saw for Pythagorean and mean-tone 
+temperament, just temperament becomes increasingly out 
+of tune as one move away from the key of C.
+For example, the fifth C$^\sharp$ to A$^\flat$ in the
+key of C$^\sharp$ differs from a perfect fifth by 41~cents.
+
+\ei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Comparison of different tuning systems}
+\bi
+
+\i Figure~\ref{f:comparetemperaments} compares
+the frequency ratios for a chromatic scale for
+the four different tuning systems that we considered
+in the previous subsections. 
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.8\textwidth]{comparetemperaments.pdf}
+\caption{Frequency ratios for a chromatic scale for 
+the four different tuning systems that we considered.
+The horizontal axis is the frequency ratio expressed in
+cents (1200 cents equals one octave).
+The dotted vertical lines correspond to equal-tempered
+tuning (equally spaced at 0, 100, 200, $\cdots$ 1200~cents);
+the red, blue, and magenta vertical lines correspond to 
+the Pythagorean, mean-tone and just temperament tuning 
+systems, respectively.}
+\label{f:comparetemperaments}
+\end{center}
+\end{figure}
+%
+One can easily see from this figure
+that the perfect fifth C$^\sharp$ to A$^\flat$ is too flat in
+Pythagorean tuning and too sharp in mean-tone and just temperament
+tuning.
+ 
+\i Table~\ref{t:fifths} quantifies this comparison, 
+giving the frequency ratios of two different fifths
+(C to G and C$^\sharp$ to A$^\flat$) in the four different
+tuning systems that we considered.
+The last column gives the difference in cents between 
+these frequency ratios and 3/2 for a just perfect fifth.
+%
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Fifth & Temperament & Freq ratio & Difference (cents) \\
+\hline
+C-G & equal & 1.498 & $-2$ \\
+C-G & pyth & 1.500 & $0$ \\
+C-G & mean & 1.495 & $-5$ \\
+C-G & just & 1.500 & $0$ \\
+C$^\sharp$-A$^\flat$ & equal & 1.498 & $-2$ \\
+C$^\sharp$-A$^\flat$ & pyth & 1.480 & $-23$ \\
+C$^\sharp$-A$^\flat$ & mean & 1.531 & $36$ \\
+C$^\sharp$-A$^\flat$ & just & 1.536 & $41$ \\
+\hline
+\end{tabular}
+\caption{Frequency ratios for two different fifths
+for the four different tuning systems that we considered.
+The last column is the difference in cents from
+a perfect fifth, which has a frequency ratio of 3/2.}
+\label{t:fifths}
+\end{center}
+\end{table}
+
+\i \demo
+Use the matlab routine fifths.m to compare the two
+different fifths, C to G and C$^\sharp$ to A$^\flat$,
+in the four different tuning systems that we considered.
+
+\i There is no perfect tuning system.
+Each system makes some compromise:
+
+i) Equal temperament: Music in equal temperament 
+can be played equally-well in all keys at the expense of 
+imperfect intervals in all keys---e.g., a perfect 
+fifth doesn't have a frequency
+ratio of 3/2, a major third doesn't have a frequency
+ratio of 5/4, etc.
+The circle of fifths closes.
+
+ii) Pythagorean tuning has just perfect fifths
+in the key of C, but major thirds that 
+are sharper than just major thirds by the 
+syntonic comma $\delta = 1.0125$ (22 cents)
+even in the key of C.
+This means that major chords like 
+C-E-G sound out of tune.
+Also, even perfect fifths are no longer 
+just perfect fifths when one moves away from the 
+key of C---e.g., the wolf fifth 
+C$^\sharp$ to A$^\flat$ is 23 cents too flat.
+
+iii) Mean-tone tuning modifies Pythagorean tuning
+so that it has just major thirds (ratio 5/4) 
+in the key of C, at the expense of having 
+perfect fifths that are a quarter-comma (5 cents)
+too flat.
+So the major chords like C-E-G sound better in
+mean-tone tuning than in Pythagorean tuning, 
+at least in the key of C.
+But as before, things get worse as one moves 
+away from the key of C---e.g., the perfect fifth
+C$^\sharp$ to A$^\flat$ is now 36 cents too sharp.
+
+iv) Just temperament is the ideal tuning system
+in the key of C having perfect fifths and major
+thirds with frequency ratios of 3/2 and 5/4, 
+respectively.
+But just like Pythagorean and mean-tone tuning,
+just temperament gets progressively worse as one 
+moves away from the key of C---e.g., the perfect
+fifth C$^\sharp$ to A$^\flat$ is now 41 cents too sharp.
+
+\ei
+
