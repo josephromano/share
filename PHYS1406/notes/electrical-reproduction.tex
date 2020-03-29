@@ -20,10 +20,10 @@ which underlies the operation of microphones and loudspeakers.
 load (such as a flashlight bulb) via a closed path (called a
 circuit), an electrical current flows.
 
-\i The voltage is denoted by $V$ and is measured in volts (V).
-The load has a {\em resistance}, which is denoted by $R$ and 
+\i The voltage is denoted by $V$ and is measured in volt (V).
+The load has a {\em resistance}, denoted by $R$, which is 
 measured in Ohm ($\Omega$).
-The current is denoted by $I$ and is measured in Ampere or 
+The current is denoted by $I$ and is measured in Amp\`ere or 
 Amp (A).
 
 \i For certain materials, $V$, $I$, and $R$ are related by 
@@ -34,7 +34,7 @@ V= IR
 \ee
 %
 This is called {\em Ohm's law of electricity}, not to be confused
-with Ohm's law of hearing, even though it's the same guy.
+with {\em Ohm's law of hearing}, even though it's by the same guy.
 
 \i For a battery, which has a {\em polarity} ($+$ and 
 $-$ terminals), the current $I$ flows in only one direction, 
@@ -52,7 +52,7 @@ Right: Alternating current (AC) circuit, consisting of
 a voltage source $V$ and load having impedance $Z$.
 For a DC circuit, the current $I$ flows in only one direction.
 For an AC circuit, the current $I$ flows alternately clockwise and
-counterclockwise.
+counterclockwise around the circuit.
 (Figures from ``PHYS 1406: Physics of Sound \& Music" 
 Course Guide by Prof.~Borst.)}
 \label{f:circuits_DC_AC}
@@ -60,7 +60,8 @@ Course Guide by Prof.~Borst.)}
 \end{figure}
 
 \i For a household wall outlet, the voltage $V$ alternates
-sinusoidally with time, producing a current $I$ that 
+sinusoidally with time (60~cycle/sec or 60~Hz), 
+producing a current $I$ that 
 also alternates sinusoidally, traveling both clockwise and 
 counterclockwise around the circuit.
 Such a circuit is called an {\em alternating current} (AC) circuit.
@@ -76,9 +77,9 @@ which is similar to Ohm's law, but it involves the {\em impedance}
 $Z$ of the load.
 
 \i Impedance is basically a generalization of resistance, which holds
-for electrical devices such as {\em capacitors} (basically,
-closely-spaced metal plates, which store electric charge) and {\em
-inductors} (basically, coils of wire, which store electric currents).
+for electrical devices such as {\em capacitors} (closely-spaced metal 
+plates, which store electric charge) and {\em inductors} (coils of wire, 
+which store electric currents).
 
 \i The product 
 %
@@ -88,7 +89,7 @@ P = VI
 %
 is the electrical {\em power} associated with a circuit.
 (For AC circuits, the formula is slightly more complicated than this,
-but we don't need to know the details.)
+due to the difference between resistance and impedance.)
 Power is measured in Watt (W), such as that for a 100-W light bulb.
 
 \i \exer
@@ -100,8 +101,8 @@ P=VI=I^2 R = V^2/R
 
 \i In general, power is the rate at which {\em work} (or {\em energy})
 is  being done. 
-If we denote the work (or energy) by $W$ done in a time interval
-$\Delta t$, then
+If we denote the work (or energy) by $W$, which is done in 
+time interval $\Delta t$, then
 %
 \be
 P = W/\Delta t
@@ -109,10 +110,11 @@ P = W/\Delta t
 W = P\,\Delta t
 \ee
 %
-Work (or energy) is measured in Joules (J), where 1~Watt =
-1~Joule/sec.
+Work (or energy) is measured in Joules (J), where 
+$1~{\rm Watt} \equiv 1~{\rm Joule/sec}$.
 
-\i Application: A kilowatt-hour (kWh) is a convenient unit of 
+\i \underline{Application}: 
+A kilowatt-hour (kWh) is a convenient unit of 
 energy that you will see on electric bills.
 In terms of Joules
 %
@@ -126,7 +128,7 @@ In terms of Joules
 
 \i \exer 
 Suppose that you paid \$100 for last month's electrical bill
-at cost of \$0.13 per kWh.
+at a cost of \$0.13 per kWh.
 (a) How many kWh did you use? 
 (b) What was the average power consumption (in Watt) over 
 the month (assume 30~days).
@@ -146,8 +148,8 @@ P = \frac{W}{\Delta t}
 = 1,100~{\rm W}
 \ee
 
-This is equivalent to using eleven 100-W light bulbs 
-continuously for a month.
+This is equivalent to having eleven 100-W light bulbs 
+on continuously for a month.
  
 \ei
 
@@ -155,6 +157,30 @@ continuously for a month.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Faraday's law}
 
+\bi
+
+\i In  1831, British scientist Michael Faraday discovered 
+that a change in the magnetic flux through a coil of wire 
+induces a voltage in the coil.
+This is called {\em Faraday's law of electromagnetic induction.}
+
+\i Mathematically, the induced voltage is given by
+%
+\be
+V = - N\,\frac{\Delta\Phi}{\Delta t}
+\ee
+%
+where $N$ is the number of loops of the coil and $\Delta\Phi$ 
+is the change in the magnetic flux 
+passing through a loop in time interval $\Delta t$.
+
+\i \demo
+Connect a coil of wire to a galvanometer (a sensitive current meter).
+Move a permanent magnet toward or away from the coil and watch how the
+galvanometer needle deflects.
+Repeat, but keep the magnet stationary and move the coil instead.
+Note that only the {\em relative} motion of the magnet and coil is important.
+(See Figure~\ref{f:faraday}.)
 %
 \begin{figure}[htbp]
 \begin{center}
@@ -168,9 +194,47 @@ in the coil.
 \end{center}
 \end{figure}
 %
+ 
+\i Faraday's law of induction has had a profound influence of 
+technology, as it underlies the operation of electric motors and generators.
+It also underlies the operation of certain types of microphones and
+loudspeakers (next subsection).
+
+\i \underline{Demonstrations}:
+
+(i)  Illustrate how a hand-powered AC generator works.
+
+(ii) Illustrate the operation of a simple DC motor constructed
+from electromagnets.
+
+(iii) Show a ``do-it-yourself" DC motor constructed from a D-cell
+flashlight battery, a small magnet, paper clips, and a coil of (magnet)
+wire stripped on one side.
+
+\i Note that electric motors and electric generators are basically 
+``inverses" of one another:
+
+For a generator, mechanical energy is converted to electrical energy
+by physically rotating a coil in an external magnetic field. 
+An voltage is induced in the coil by Faraday's law.
+
+For a motor, electrical energy is converted to mechanical energy 
+by sending a current through a coil of wire.  
+This current creates an electromagnet, which interacts with the 
+external magnetic field, causing the coil to rotate.
+
+\ei
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Microphones and loudspeakers}
+
+\bi
+
+\i Faraday's law of electromagnetic induction also underlies the
+operation of so-called ``dynamic" microphones and loudspeakers.
+
+\i A schematic diagram of a dynamic microphone is shown in 
+Figure~\ref{f:microphone}.
 %
 \begin{figure}[htbp]
 \begin{center}
@@ -187,6 +251,19 @@ the coil which follows the fluctuations of the sound wave.
 \end{center}
 \end{figure}
 %
+
+\i When a sound wave impinges on the movable diaphragm, 
+the pressure deviations in the wave cause the diaphragm 
+to move back-and-forth in response to the sound.
+A coil of wire, which is attached to the diaphragm, thus 
+moves with respect to a fixed magnetic field, inducing a
+time-varying voltage $V$ in the coil that follows the pressure
+deviations in the sound wave.
+This voltage can then be amplified and used as input 
+to other electronics that can record or transmit the sound. 
+
+\i A loudspeaker works like a microphone in reverse.
+
 %
 \begin{figure}[htbp]
 \begin{center}
@@ -220,3 +297,4 @@ which acts like a Helmholtz resonator.
 \end{figure}
 %
 
+\ei
