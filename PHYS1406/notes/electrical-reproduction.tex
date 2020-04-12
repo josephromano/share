@@ -96,7 +96,8 @@ Power is measured in Watt (W), such as that for a 100-W light bulb.
 Using Ohm's law $V=IR$, show that
 %
 \be
-P=VI=I^2 R = V^2/R
+P=VI=I^2 R 
+%= V^2/R
 \ee
 
 \i In general, power is the rate at which {\em work} (or {\em energy})
@@ -111,7 +112,7 @@ W = P\,\Delta t
 \ee
 %
 Work (or energy) is measured in Joules (J), where 
-$1~{\rm Watt} \equiv 1~{\rm Joule/sec}$.
+$1~{\rm Joule} \equiv 1~{\rm Watt}\cdot{\rm sec}$.
 
 \i \underline{Application}: 
 A kilowatt-hour (kWh) is a convenient unit of 
@@ -122,7 +123,6 @@ In terms of Joules
 1~{\rm kWh}
 = 1~{\rm kW}\times 1~{\rm hr}
 = 1000~{\rm W} \times 3600~{\rm s}
-= 1000~{\rm J/s} \times 3600~{\rm s}
 = 3.6\times 10^6~{\rm J}
 \ee
 
@@ -198,27 +198,46 @@ in the coil.
 \i Faraday's law of induction has had a profound influence of 
 technology, as it underlies the operation of electric motors and generators.
 It also underlies the operation of certain types of microphones and
-loudspeakers (next subsection).
+loudspeakers (these will be described in the next subsection).
+
+\i Another key result that we will need when describing the 
+operation of motors and generators is that 
+{\em an electric current creates a magnetic field}.
+
+\i This was observed by Hans Christian Oersted in 1820, when he noticed
+that a current-carrying wire caused a (magnetic) compass needle to deflect.
+The magnetic field {\em circles around} the current-carrying wire 
+in a plane perpendicular to the direction of the current.
+
+\i A consequence of this fact is that it's possible to produce an 
+{\em electromagnet} by sending an electric current through a coil of wire.
+An electromagnet acts just like a permanent bar magnet, with N and S 
+magnetic poles.
 
 \i \underline{Demonstrations}:
 
-(i)  Illustrate how a hand-powered AC generator works.
+(i) Make an electromagnet from a screwdriver, battery, and
+some wire wrapped around the screwdriver.
 
-(ii) Illustrate the operation of a simple DC motor constructed
+(ii) Illustrate how a hand-powered AC generator works.
+
+(iii) Illustrate the operation of a simple DC motor constructed
 from electromagnets.
 
-(iii) Show a ``do-it-yourself" DC motor constructed from a D-cell
+(iv) Show a ``do-it-yourself" DC motor constructed from a D-cell
 flashlight battery, a small magnet, paper clips, and a coil of (magnet)
 wire stripped on one side.
 
 \i Note that electric motors and electric generators are basically 
 ``inverses" of one another:
 
-For a generator, mechanical energy is converted to electrical energy
+\underline{Electric generator}: 
+mechanical energy is converted to electrical energy
 by physically rotating a coil in an external magnetic field. 
 An voltage is induced in the coil by Faraday's law.
 
-For a motor, electrical energy is converted to mechanical energy 
+\underline{Electric motor}: 
+electrical energy is converted to mechanical energy 
 by sending a current through a coil of wire.  
 This current creates an electromagnet, which interacts with the 
 external magnetic field, causing the coil to rotate.
@@ -240,12 +259,12 @@ Figure~\ref{f:microphone}.
 \begin{center}
 \includegraphics[width=0.5\textwidth]{microphone}
 \caption{Schematic diagram of a dynamics microphone.
-The pressure deviation associated with a sound wave
-pushes back and forth on the diaphragm of the microphone.
-A coil of wire, which is attached to the diaphragm, thus
-moves in the presence of a magnetic field.
-The changing magnetic flux through the coil induces a voltage $V$ in
-the coil which follows the fluctuations of the sound wave.
+The pressure deviations associated with a sound wave
+push back and forth on the diaphragm of the microphone.
+A coil of wire, which is attached to the diaphragm, 
+thus moves in the presence of a magnetic field.
+The changing magnetic flux through the coil induces a voltage 
+$V$ in the coil which follows the fluctuations of the sound wave.
 (Figure from ``Physics of Sound," by Berg and Stork.)} 
 \label{f:microphone}
 \end{center}
@@ -257,20 +276,20 @@ the pressure deviations in the wave cause the diaphragm
 to move back-and-forth in response to the sound.
 A coil of wire, which is attached to the diaphragm, thus 
 moves with respect to a fixed magnetic field, inducing a
-time-varying voltage $V$ in the coil that follows the pressure
-deviations in the sound wave.
+time-varying voltage in the coil (according to Faraday's
+law) that follows the pressure deviations in the sound wave.
 This voltage can then be amplified and used as input 
-to other electronics that can record or transmit the sound. 
+to other electronics that record or transmit the sound. 
 
-\i A loudspeaker works like a microphone in reverse.
-
+\i A loudspeaker works like a microphone in reverse, see
+Figure~\ref{f:loudspeaker}.
 %
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{loudspeaker}
-\caption{An electrical signal applied to the coil 
-creates a magnetic field that interacts with that of the
-permanent magnetic.
+\caption{An time-varying electrical signal (e.g., a voltage) 
+applied to the coil creates a magnetic field that interacts 
+with that of the permanent magnet.
 The speaker cone, which is attached to the coil, 
 moves back-and-forth in repsonse to this interaction,
 thus producing a sound wave. 
@@ -279,6 +298,23 @@ thus producing a sound wave.
 \end{center}
 \end{figure}
 %
+
+\i A time-varying voltage, which is an electrical 
+representation of the sound, is applied to a coil of wire 
+that is attached to the loudspeaker cone.
+A current then flows in this coil creating an electromagnet
+that interacts with an external magnetic field, causing
+the loudspeaker cone to move back-and-forth.
+This motion creates pressure deviations in 
+the air, which is the sound wave that we then hear.
+
+\i The left and middle panels of Figure~\ref{f:loudspeaker_tunedport}
+show two typical loudspeakers: 
+(i) an ``acoustic suspension" loudspeaker, which is just 
+a loudspeaker cone and coil suspended inside a closed box; and 
+(ii) a ``tuned-port" loudspeaker, which is an acoustic
+suspension loudspeaker whose box has a hole in it, which 
+emphasizes the lower (bass) frequencies.
 %
 \begin{figure}[htbp]
 \begin{center}
@@ -296,5 +332,18 @@ which acts like a Helmholtz resonator.
 \end{center}
 \end{figure}
 %
+
+\i The right-hand side of Figure~\ref{f:loudspeaker_tunedport}
+shows the frequency response curves for the two loudspeakers:
+(a) the frequency response of the acoustic-suspension loudspeaker;
+(b) the frequency response of an empty box with a hole in it,
+which acts like a Helmholtz resonator; and 
+(c) the frequency response of the tuned-port speaker, which is
+a combination of the frequency response curves shown in (a) and (b).
+
+\i Compared to the acoustic-suspension loudspeaker, the tuned-port
+loudspeaker is better at producing lower (bass) frequency sounds.
+Without the hole, the suspension box would need to be larger for 
+the loudspeaker to produce these lower frequencies.
 
 \ei
