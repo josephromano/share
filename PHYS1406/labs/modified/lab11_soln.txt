@@ -44,7 +44,7 @@ freuqencies in Figure 1 for the piano keyboard
 
    Equal temperament:
    C4 = 261.63 Hz
-   E4 = C4 * 2^(4/12) = 327.63 Hz
+   E4 = C4 * 2^(4/12) = 329.63 Hz
    G4 = C4 * 2^(7/12) = 392.00 Hz
 
 4) Expect the major triad in just temperament to sound better than in
