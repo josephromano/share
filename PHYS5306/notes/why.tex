@@ -1,0 +1,252 @@
+\documentclass[10pt]{article}
+\usepackage{amssymb,amsmath,amsthm,longtable}
+\usepackage{latexsym}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{textcomp}
+\captionsetup{width=5.75in}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\numberwithin{equation}{section}
+\usepackage{amsfonts}
+\usepackage{upgreek}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{dcolumn}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{subfigure}
+
+% begin equation, itemize, etc.
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\ben{\begin{enumerate}}
+\def\een{\end{enumerate}}
+\def\i{\item{}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\mb}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\def\d{{\rm{d}}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% noindent, space between paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\medskipamount}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Why should I learn this stuff?}
+\maketitle
+%\tableofcontents
+
+{\bf General remarks:}
+Since very few of you will go on to careers that will 
+require you to use classical mechanics as part of your
+job, one is justified in asking why you should spend a 
+whole semester learning graduate-level classical mechanics, 
+when you could be learning other ``more practical" things.
+One answer to this question (which applies as well to 
+other core courses in physics) is that the problem-solving 
+skills and mathematical techniques that you will learn 
+in this course are applicable to {\em other} areas 
+of physics and science.
+Having extra ``tools in your toolbox" is often very helpful
+when it comes to tackling unsolved research problems.
+One never knows when a certain technique or approach will 
+lead to a solution.
+
+Another answer is that, although the number may be small,
+some of you {\em will} actually 
+end up working in fields where certain aspects of classical 
+mechanics will be required or at least be very helpful.
+For example, a theoretical physicist studying studying 
+classical or quantum field theory (particle physics, 
+relativity, etc.)\ will often write 
+down a Lagrangian as the first step in defining or 
+solving a problem. 
+Knowing the associated classical Hamiltonian and 
+Poisson bracket structure then allows one to transition 
+to quantum theory with its Hamiltonian operator and commutators.
+
+Many mechanical, civil, and aerospace engineers 
+will also use classical mechanics in their work, as an analysis 
+of the forces and torques acting on a system determines 
+whether or not a bridge will collapse or a rocket will leave 
+the launch pad, etc.
+Astrophysicists make use of concepts from central force 
+motion when studying the gravitational interaction between 
+binary star systems, galaxy rotation curves, etc.
+
+And, finally, don't forget the numerous applications of
+classical mechanics in your everyday lifes.  
+An apple falling from a tree, 
+the orbit of the Moon, a spinning ice skater,
+%speeding up as she pulls her arms closer to her body, 
+the trajectory of football pass, the impact of 
+a tennis racket with a tennis ball, $\ldots$, are all described 
+by the laws of classical mechanics.
+Having a solid understanding of classical mechanics will 
+therefore give you a better understanding and appreciation 
+of much of the world around you.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lagrangian mechanics (\S1-5)}
+
+Lagrangian mechanics is an alternative formulation of
+Newton's laws applied to a system of interacting particles.
+It is formulated in terms of scalar quantities (kinetic
+and potential energies) as opposed to vectors
+(accelerations, forces, torques), and as such is mathematically
+easier to work with.
+Constraint (reaction) forces can be ignored in the 
+Lagrangian formalism by working with generalized coordinates
+that specify the true degrees of freedom of the system.
+If desired, constraint forces can be included in the 
+Lagrangian formalism by using the method of Lagrange multipliers.
+
+Conservation of energy, momentum, and angular momentum are 
+simply described in the Lagrangian formalism, being related 
+to symmetries of the Lagrangian with respect to time 
+translations, space translations, and rotations, respectively.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Non-inertial reference frames (\S39)}
+
+Newton's law $\vec F=m \vec a$ and the Lagrangian
+$L=T-U$ are valid only in an inertial frame of 
+reference.
+But most reference frames, like one attached to
+the surface of the Earth, are non-inertial 
+(due to translational acceleration or rotational motion).
+In a non-inertial frame, Newton's law acquires additional
+{\em fictitious} force terms associated with the 
+acceleration of the reference frame.
+We must include these fictitious force terms (e.g.,
+the Coriolis force) to properly describe projectile motion
+on the surface of the Earth.
+Firing artillery shells on a battle field without taking
+into account the deflection caused by the Coriolis force
+would lead you to miss the target.
+In addition, the precession of the plane of oscillation of 
+a pendulum on the surface of the Earth is a direct demonstration 
+of Earth's rotational motion (Foucault's pendulum).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hamiltonian mechanics (\S40)}
+
+Hamiltonian mechanics is a reformulation of 
+Lagrangian mechanics which takes the generalized
+coordinates $q_i$ and generalized momenta 
+$p_i\equiv \partial L/\partial q_i$
+% $i=1,2,\cdots, s$ 
+as the fundamental variables.
+Hamilton's equations are first-order differential
+equations for both the $p$'s and $q$'s, which are 
+often simpler to solve than the corresponding 
+second-order Lagrange's equations for the $q$'s.
+
+The true value of the Hamiltonian formulation arises 
+when one considers transformations that mixes the 
+$q$'s and the $p$'s.  
+Such transformations, which preserve Hamilton's equations,
+are called {\em canonical transformations},
+and by judicious choice of these transformations, the 
+system of equations is easier to solve.
+In the Hamiltonian formulation, conserved quantities
+turn out to be generators of symmetry transformations of
+the Hamiltonian.
+Unfortunately, we will not have time this semester to 
+cover these latter items.
+They are discussed in Chapter VII, \S 42, 45, 47.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conservation laws (\S6-10)}
+
+Conserved quantities are useful since they don't change
+during the motion of a system of particles.
+They reduce the number of equations of motion that we
+need to integrate.
+For example, using conservation of energy and angular
+momentum for central force problems allows to us to 
+solve {\em first-order} differential equations for $r$ and $\phi$, 
+instead of more complicated second-order equations.
+
+The motion of the center of mass (COM) of a system of 
+particles can be thought of as the motion of the system 
+{\em as as whole}.  
+For a closed system, the COM moves with constant velocity, 
+which can be set to zero by working in the COM frame.
+This simplifies the description of the motion of the 
+individual particles.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Central force motion (\S11, 13-15)}
+
+Central force motion arises whenever you have 
+two bodies that interact via a potential that depends
+only on the distance between the two bodies.
+It describes, for example, the motion of the planets 
+around the Sun, the orbits of communication satellites 
+around the Earth, etc.
+Kepler's laws of planetary motion are all derivable
+using the formalism of central force motion for the 
+potential $U(r)= -\alpha/r$, with $\alpha>0$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Collisions and scattering (\S16-20)}
+
+Using only conservation of momentum and energy 
+for elastic collisions or disintegrations of 
+particles, we can determine a lot about the 
+end state of a collision without knowing the 
+explicit form of the interaction that causes it.
+Additionally knowing the scattering potential 
+allows us to fully determine the 
+scattering angles and differential cross section 
+for the incident and target particles, as a function 
+of the incident energy and impact parameter of 
+the incoming particle.
+
+Much of experimental high-energy physics involves the 
+scattering of high-energy subatomic particles (e.g., 
+think of the Large Hadron Collider).
+Gravitational ``sling-shot" trajectories, which are 
+used to get satellites to distant planets without the use of 
+additional fuel, are a combination of inverse-square-law-force
+bound orbits and scattering of one mass off of another.
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Small oscillations (\S21-23)}
+
+Simple harmonic motion (like that for a mass attached to 
+a spring, $F=-kx$) occurs whenever one has small oscillations 
+about a position of stable equilibrium.
+This occurs in many different circumstances, as it 
+only requires that the system of interacting 
+particles be slightly perturbed away from a stable 
+equilibrium configuration.
+Mathematically, such oscillations occur because
+the potential is well-approximated by a quadratic 
+function in the neighborhood of a position of stable 
+equilibrium.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rigid body motion (\S31-36, 38)}
+
+To describe the complicated translational and rotational 
+motion of a football (or any extended object) as 
+it moves through space, we need to go beyond the 
+particle approximation, which was used in the previous sections.
+The angular velocity, angular momentum, and any external
+torques that may act on the body are the key quantities that 
+enter such an analysis.
+Spinning tops, gyroscopes, and the precession of the 
+Earth's axis are examples that fall within the realm of 
+rigid-body motion.
+
+\end{document}
