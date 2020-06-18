@@ -207,7 +207,7 @@ modified equations of motions are then
 %
 Together with the constraint equations \eqref{e:holonomic}, these are $n+m$ 
 equations for the $n+m$ unknowns $q_i$ and $\lambda_\alpha$.
-Note that the constrain force
+Note that the generalized constraint force
 $\sum_\alpha \lambda_\alpha (\partial \varphi_\alpha/\partial q_i)$ is
 orthogonal to the constraint surface \eqref{e:holonomic}.
 
@@ -238,8 +238,9 @@ Together with \eqref{e:nonholonomic}, these are $n+m$ equations
 for the $n+m$ unknowns $q_i$ and $\lambda_\alpha$.
 
 Examples of non-holonomic constraints include dissipative 
-forces like friction and the reaction force for a 
-sphere rolling without slipping on a horizontal surface.
+forces like friction, and the reaction force for a 
+sphere that rolls without slipping or pivoting on a 
+horizontal surface.
 
 \i Define and give examples of a {\em closed system}, 
 {\em constant external field}, and {\em uniform field}.
@@ -259,7 +260,7 @@ has no explicit time dependence
 \be
 U = -\sum_a \vec F_a\cdot \vec r_a
 \ee
-where $F$ is independent of $\vec r_1$, $\vec r_2$, etc., so that 
+where $\vec F_a$ is independent of $\vec r_1$, $\vec r_2$, etc., so that 
 \be
 -\frac{\partial U}{\partial\vec r_a}= \vec F_a
 \quad{\rm has\ no\ position\ dependence}
