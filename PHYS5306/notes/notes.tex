@@ -31,6 +31,7 @@
 \newcommand{\mb}[1]{\mathbf{#1}}
 \renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\vecs}[1]{\bs{#1}}
+\newcommand{\unit}[1]{\hat{\vec{#1}}}
 \def\d{{\rm{d}}}
 
 \begin{document}
@@ -69,8 +70,8 @@ Example: Double pendulum
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=0.4\textwidth]{img/double_pendulum}
-%\caption{}
-\label{f:rolling_cylinder}
+\caption{}
+\label{f:doublependulum}
 \end{center}
 \end{figure}
 %
@@ -215,15 +216,15 @@ orthogonal to the constraint surface \eqref{e:holonomic}.
 differentials 
 %
 \be
-c_{\alpha i}\,\delta q_i = 0\,,
+\sum_i c_{\alpha i}\,\delta q_i = 0\,,
 \qquad \alpha = 1,2,\cdots, m
 \label{e:nonholonomic}
 \ee
 %
 that cannot be integrated to yield relations between just the
 generalized coordinates.
-Such constraints can only be included in the Lagrangian formalism at
-the level of the EOMs.
+Such constraints can be included in the Lagrangian formalism 
+at the level of the variation of the action.
 The modified equations of motion are
 %
 \be
@@ -240,7 +241,15 @@ for the $n+m$ unknowns $q_i$ and $\lambda_\alpha$.
 Examples of non-holonomic constraints include dissipative 
 forces like friction, and the reaction force for a 
 sphere that rolls without slipping or pivoting on a 
-horizontal surface.
+horizontal surface:
+%
+\be
+\vec V - \vecs\Omega\times(a\unit n) = 0
+\ee
+%
+where $\vec V$ is the velocity of the COM of the sphere
+of radius $a$, $\vecs\Omega$ is the angular velocity vector,
+and $\unit{n}$ is a unit vector normal to the surface.
 
 \i Define and give examples of a {\em closed system}, 
 {\em constant external field}, and {\em uniform field}.
@@ -275,6 +284,28 @@ where $\vec F_a$ is independent of $\vec r_1$, $\vec r_2$, etc., so that
 
 \i Write down the relationship between velocity vectors 
 in inertial and non-inertial reference frames.
+
+See Figure~\ref{f:noninertial}:
+%
+\be
+\vec v_0 
+\equiv \dot{\vec r}_0
+= \vec V + \vec v + \vecs\Omega\times\vec r
+\ee
+%
+where $\vec V\equiv\dot{\vec R}$ is the velocity of the origin $O$
+wrt to the inertial frame, and 
+$\vec v$ is the velocity of $m$ wrt the non-inertial frame.
+
+%
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{img/noninertial}
+\caption{}
+\label{f:noninertial}
+\end{center}
+\end{figure}
+%
 
 \i Distinguish non-inertial reference frames associated
 with translational and rotational motion.
